@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif; 
+}
+.container{
+    display: grid; 
+    min-height: 100vh;  /* Ensures the grid covers the full viewport height */
+    width: 100%; 
+    grid-template-columns:1fr;
+    grid-template-rows: 90px 1fr 120px;
+    grid-auto-columns: auto;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+nav{
+    grid-area: header; 
+    background-image: url('..//images/nav.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+.main-content{
+    grid-area: main;
+    background-color:#F0EDD4;
+    
+}
+
+.section {
+    font-family: "Montserrat", sans-serif;     
+    font-style: normal;
+    min-height: 100vh;  /* Ensures each section covers at least the full viewport height */
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}  
+
+footer {
+    grid-area: footer; 
+    background-color: #685752; 
+    padding-top:50px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+.section-1{
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: start;
+    background-image: url('..//images/front-church.jpg'); 
+    display: flex;
+    text-align: justify;
+    justify-content: start;
+    padding: 60px 120px;
+}
+
+.first-section{ 
+    color: white;
+    padding: 3rem;
+    
+}
+
+.church-label {
+    font-size: 3rem;
+    font-weight: 700;
+    align-self: flex-start;
+}
+.church-about {
+    font-size: 2rem;
+    font-weight: 550;
+    /* text-shadow: white; */
+}
+
+
+.section-2{
+    background-color: #ffff; 
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 50px 1fr 1fr; 
+    grid-template-areas:
+        "pastor-label pastor-label" 
+        "img1 img1-abt"
+        "img2 img2-abt";
+    justify-content: center;
+    text-align: center;
+    align-items: left;
+    padding: 60px 120px;
+}
+
+.pastor-label{
+    grid-area: pastor-label;
+    font-size: 3rem;
+    font-weight: 700;
+    
+}
+.image1{
+    grid-area: img1;
+    padding:0px;
+}
+
+.image1-about{
+    grid-area: img1-abt;
+    padding:2rem;
+}
+
+.image2{
+    grid-area: img2;
+   
+}
+.image2-about{
+    grid-area: img2-abt;
+    padding:2rem;
+}
+.img{
+    width: 40%;         /* Fills the grid cell horizontally */
+    height: 0%;        /* Preserves the image’s aspect ratio */
+    object-fit: cover;   /* (Optional) Makes the image fill its box nicely */
+}
+
+
+
+
+.section-3{
+    background-color: #B17457; 
+    
+}
+.section-4{
+    background-color: #C1E8DA;
+    
+}
+.section-5{
+    padding: 0px;
+    background-size: cover;
+    width: 100%;  
+}
+
+
+li, a, button, p {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(10px, 1vw, 16px);
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+   
+}
+a {
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; 
+    background-image: url('..//images/nav.png');  
+}
+
+.logo {
+    cursor: pointer;
+    max-height: 140px;
+    max-width: 140px;
+    min-width: 50px;
+    min-height: 50px;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.church-name {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    font-size: clamp(9px, 4vw, 30px);
+    color: white;   
+    margin-right: auto;  
+}
+
+.nav_links {
+    list-style: none; 
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px; /* Space between items */
+    text-decoration: none;
+    color: #2B2B2B;
+}
+
+
+.nav_links li a {
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #ffff; 
+    padding: 6px 15px;
+    background-color: #423f3e5e;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #423F3E;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #2B2B2B;
+}
+
+
+
+
+
+
+
